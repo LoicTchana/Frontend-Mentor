@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <form method="post" id="monFormulaire">
+  <fieldset>
+    <br>
+    <h2>Contact Us</h2>
+    <br>
+
+    <!--First Name et Last Name-->
+    <div class="name">
+      <div class="first-name">
+        <label for="firstname">First Name  * </label>
+        <input type="text" name="firstname" id="first-name">
+        <span class="error-message" id="firstname-error"></span>
+      </div>
+
+      <div class="last-name">
+        <label for="lastname">Last Name * </label>
+        <input type="text" name="lastname" id="lastname">
+        <span class="error-message" id="lastname-error"></span> <!-- Message d'erreur -->
+
+      </div>
+    </div>
+    <br>
+
+    <!--Adresse Email-->
+    <br>
+    <div class="email">
+     <label for="email">Email Address *</label>
+     <br>
+     <input type="email" name="email" id="email">
+     <span class="error-message" id="email-error"></span> <!-- Message d'erreur -->
+    </div>
+    <br>
+    <br>
+
+    <!--Query Type-->
+    &nbsp;&nbsp;&nbsp;&nbsp;<label for="QueryType">Query Type *</label>
+    <div class="query-type">
+    
+      <fieldset class="field-input">
+        <input type="radio" name="Query" value="General_Enquiry" id="General_Enquiry">
+        <label for="General_Enquiry">General Enquiry</label>
+      </fieldset>
+
+      <fieldset class="field-input">
+        <input type="radio" name="Query" value="Support_Request" id="Support_Request">
+        <label for="Support_Request">Support Request</label>
+      </fieldset>
+
+    </div>
+    <span class="error-message" id="query-error"></span> <!-- Message d'erreur -->
+    <br>
+    <br>
+
+
+    <!--Message-->
+    <div class="Message">
+     <label for="Message">Message *</label>
+     <br>
+     <textarea id="Message" name="Message" rows="6" cols="80" ></textarea>
+     <span class="error-message" id="message-error"></span> <!-- Message d'erreur -->
+    </div>
+    <br>
+    <br>
+
+    <!--Checbox/agreement-->
+    &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="choix" id="choix">
+    <label for="choix">I consent to being contacted by team *</label>
+    <span class="error-message" id="choix-error"></span> <!-- Message d'erreur -->
+    <br>
+    <br>
+    <!--Submit form-->
+    <input class="envoyer-btn" type="submit" value="Submit">
+
+
+
+
+
+  </fieldset>
+
+  
+ </form>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

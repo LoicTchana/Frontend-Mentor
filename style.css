@@ -1,0 +1,129 @@
+* {
+   margin:0;
+  }
+
+body {
+    background-color:hsl(148, 38%, 91%);
+    font-family:'Karla',sans-serif;
+ }
+
+
+fieldset {
+    background-color:hsl(0, 0%, 100%);   
+    width:600px;
+    margin-left:20%;
+    margin-top:5%;
+    border-radius:5px;
+    border:none;
+    margin-bottom:5%;
+ }
+
+fieldset h2{
+    margin-left:15px;
+}
+
+.name{
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between;
+    font-size:16px;
+    position:relative;
+    margin-left:15px;
+    
+ } 
+
+.name input{
+    width:250px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid;
+    border-color:hsl(186, 15%, 59%);
+}
+
+.first-name{
+    display:flex;
+    flex-direction:column;
+
+ }
+
+.last-name{
+    display:flex;
+    flex-direction:column;
+
+ }
+
+.email{
+    margin-left:15px;
+    
+ }
+
+.email input{
+    width:250px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid;
+    border-color:hsl(186, 15%, 59%);
+ }
+
+.query-type{
+    display:flex; 
+    flex-direction:row;
+    margin-left:50px;
+ }
+
+
+
+.field-input{
+    position:relative;
+    left:-150px;
+    width:250px;
+    top:-20px;
+    border: 1px solid hsl(186, 15%, 59%);
+
+ }
+
+.Message{
+    margin-left:15px;
+    
+ }
+
+.envoyer-btn{
+    color:white;
+    background-color: hsl(169, 82%, 27%);
+    width:610px;
+    margin-left:15px;
+    height:50px;
+    border-radius:5px;
+    margin-bottom:20px;
+    border:none;
+    font-size:16px;
+    font-weight:bold;
+
+ }
+
+.envoyer-btn:hover{
+  background-color:hsl(147, 48%, 44%);
+ }
+
+ .envoyer-btn:active{
+    transform:scale(0.95);
+    background-color:hsl(147, 48%, 44%); ;
+ }
+
+
+/* Message d'erreur */
+.error-message {
+    color: hsl(0, 66%, 54%);
+    font-size: 0.9em;
+    display: none; /* Cache les messages d'erreur par défaut */
+  }
+  
+  /* Champs avec erreur */
+  input.error, textarea.error {
+    border: 2px solid hsl(0, 66%, 54%); /* Bordure rouge */
+  }
+  
+  /* Case à cocher avec erreur */
+  input[type="checkbox"].error {
+    border: 2px solid hsl(0, 66%, 54%); /* Bordure rouge */
+  }
